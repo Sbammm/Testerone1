@@ -15,7 +15,7 @@
             <declare name="qtanum" type="Integer" array="False" size=""/>
             <assign variable="qtanum" expression="0"/>
             <declare name="somma" type="Real" array="False" size=""/>
-            <assign variable="somma" expression="0"/>
+            <assign variable="somma" expression="15"/>
             <declare name="media" type="Real" array="False" size=""/>
             <assign variable="media" expression="0"/>
             <declare name="risp" type="String" array="False" size=""/>
