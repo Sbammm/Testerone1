@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="op"/>
+        <attribute name="authors" value="ITS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-06 12:32:32 "/>
+        <attribute name="created" value="SVRTO0lUUy1QMTQ7MjAyNC0xMS0yOTsiMDE6MjE6NDcgIjsxODk3"/>
+        <attribute name="edited" value="SVRTO0lUUy1QMTQ7MjAyNC0xMi0wNjsiMTI6MzI6MzIgIjszOzIwMDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <declare name="qtanum" type="Integer" array="False" size=""/>
+            <assign variable="qtanum" expression="0"/>
+            <declare name="somma" type="Real" array="False" size=""/>
+            <assign variable="somma" expression="0"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <declare name="risp" type="String" array="False" size=""/>
+            <declare name="" type="Integer" array="False" size=""/>
+            <output expression="&quot;hai dei numeri&quot;" newline="True"/>
+            <input variable="risp"/>
+            <if expression="risp= &quot;si&quot;">
+                <then>
+                    <while expression="risp= &quot;si&quot;">
+                        <assign variable="qtanum" expression="qtanum + 1"/>
+                        <output expression="&quot;dimmi il numero&quot;" newline="True"/>
+                        <input variable="numero"/>
+                        <assign variable="somma" expression="somma+numero"/>
+                        <output expression="&quot;hai altri numeri&quot;" newline="True"/>
+                        <input variable="risp"/>
+                    </while>
+                    <assign variable="media" expression="somma/qtanum"/>
+                    <output expression="&quot;la somma &#232; di &quot; &amp;somma" newline="True"/>
+                    <output expression="&quot; la media &#232; di &quot; &amp;media" newline="True"/>
+                    <output expression="&quot; il totale dei numeri dati &quot; &amp;qtanum" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot; non mi hai dato numeri&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
